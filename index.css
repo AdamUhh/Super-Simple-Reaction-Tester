@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  padding: 8px;
+  margin: 0;
+  overflow: hidden;
+}
+
+div {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+div > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+}
+
+#rangeNumber {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+p {
+  font-size: 30px;
+}
+
+canvas {
+  border: 1px solid white;
+}

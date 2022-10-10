@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaction Time Trainer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <p>Average Reaction Time: <span id="avg">0</span>ms</p>
+      <p>Reaction Time: <span id="reaction">0</span>ms</p>
+      <div>
+        <span>20</span>
+        <input type="range" min="20" max="100" value="20" onchange="changeRadius()" />
+        <span id="rangeNumber">20</span>
+        <span>100</span>
+      </div>
+    </div>
+    <canvas id="myCanvas" width="100%" height="198"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
