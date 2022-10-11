@@ -45,10 +45,13 @@ canvas.onclick = function (e) {
 function getArc() {
   let x, y;
 
-  do {
-    x = Math.floor(Math.random() * canvas.width);
-    y = Math.floor(Math.random() * canvas.height);
-  } while (x < r * 2 || x > canvas.width - r || y < r * 2 || y > canvas.height - r);
+  x = Math.floor(Math.random() * canvas.width);
+  y = Math.floor(Math.random() * canvas.height);
+
+  if (x < r * 2) x = x + r * 3;
+  if (x > canvas.width - r) x = x - r * 3;
+  if (y < r * 2) y = y + r * 3;
+  if (y > canvas.height - r) y = y - r * 3;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
